@@ -1,7 +1,16 @@
-# fashion-mnist-최적화 팀 프로젝트
+# 우리들의 신경망 모델
 
-> 2026 신경망 팀플 — **"우리들의 신경망 모델"**
-> Fashion-MNIST를 가장 잘 분류하는 신경망을 **교재 4·5·6장 기법만으로** 찾고, 그 선택이 합리적임을 실험으로 입증한다.
+**2026 신경망 팀플 · Fashion-MNIST 분류**
+
+### 목표
+수업에서 배운 신경망 방법으로 **"우리들의 신경망 모델"** 을 만든다.
+목표를 이루기 위해 일정을 관리하고, 동료와 협업하고 배려하며, 성취감을 느낀다.
+
+### 팀플 개요
+- 팀별로 협력하여 주어진 연구를 수행한다.
+- **Fashion-MNIST** 데이터셋에 수업에서 배운 학습 방법을 적용해 **최선의 분류 성능을 내는 신경망 모델**을 찾는다.
+- 체계적이고 효과적인 실험으로, 팀이 제안하는 방법론이 **합리적임을 입증**한다.
+- 실험 내용을 **PPT와 보고서**로 정리하고 발표한다.
 
 | 항목 | 내용 |
 |---|---|
@@ -14,7 +23,40 @@
 
 작업 기록은 [개발일지.md](개발일지.md)에 남긴다. Git 사용법·브랜치·커밋·PR 규칙은 👉 **[협업가이드.md](협업가이드.md)**
 
-> 📦 **clone만 하면 바로 실험 가능** — Fashion-MNIST 데이터(`Neural_Net/data/fashion/`), 데이터 로더, 교재 공통 코드(`common/`)가 수업 폴더와 같은 구조로 들어 있습니다. 폴더 구조와 import 코드는 [협업가이드 3장](협업가이드.md#3-저장소-폴더-구조와-규칙) 참고.
+### 📦 저장소 구조 — clone만 하면 바로 실험 가능
+
+수업 폴더(`신경망/common` + `신경망/Neural_Net`)와 같은 배치라서, 데이터 다운로드나 폴더 세팅 없이 바로 실행됩니다.
+
+```text
+fashion-mnist-optimization-team-project/
+├── README.md                     # 프로젝트 소개 (이 문서)
+├── 협업가이드.md                  # Git · 브랜치 · 커밋 · PR 방법
+├── 개발일지.md                    # 일지 + 실험 기록 표
+├── common/                       # 교재 공통 코드
+│   ├── multi_layer_net.py        #   MultiLayerNet
+│   ├── multi_layer_net_extend.py #   MultiLayerNetExtend (BN · Dropout · 가중치 감소)
+│   ├── layers.py · optimizer.py · trainer.py · util.py ...
+└── Neural_Net/
+    ├── data/
+    │   ├── mnist_reader.py       # 데이터 로더 (load_mnist)
+    │   └── fashion/              # Fashion-MNIST 원본 4개 (train 60,000 / test 10,000)
+    ├── optimizer_compare_fashion_mnist.py   # 옵티마이저 비교 예제
+    ├── experiments/
+    │   ├── A_layers/             # A: 층 수 · 뉴런 수
+    │   ├── B_optimizer/          # B: 옵티마이저 · 초기화 · BN · 정규화
+    │   └── C_random_search/      # C: 하이퍼파라미터 탐색
+    ├── results/                  # 그래프 · 결과 csv
+    └── Competition/              # 교수님 채점 코드 + 최종 network_TeamN.pkl
+```
+
+| 바로가기 | |
+|---|---|
+| [`common/`](common) | 교재 공통 코드 |
+| [`Neural_Net/data/fashion/`](Neural_Net/data/fashion) | 데이터셋 |
+| [`Neural_Net/experiments/`](Neural_Net/experiments) | 담당별 실험 폴더 |
+| [`Neural_Net/Competition/`](Neural_Net/Competition) | 제출 · 채점 |
+
+실험 파일 맨 위에 붙일 import 코드는 [협업가이드 3-4](협업가이드.md#3-4-실험-코드-맨-위에-붙일-import-코드-복붙용) 참고.
 
 ---
 
