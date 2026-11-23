@@ -13,6 +13,7 @@
 |  |  |  |  |  |
 
 ## 체크리스트
+- [ ] 오른쪽 Reviewers에 `applelog` 를 지정했다 (합치기는 applelog만, Merge 버튼 누르지 않기)
 - [ ] test 데이터를 학습·튜닝에 쓰지 않았다 (`x_test` 미사용, 검증은 `x_val`)
 - [ ] 6층 이하다 (`hidden_size_list` 길이 ≤ 5)
 - [ ] 교재 4·5·6장 기법만 썼다
