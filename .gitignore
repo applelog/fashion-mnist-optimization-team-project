@@ -8,3 +8,5 @@ __pycache__/
 # 압축 데이터는 기본 제외, 단 Fashion-MNIST 원본은 팀 공용으로 포함
 *.gz
 !Neural_Net/data/fashion/*.gz
+# 실험 중 생성되는 pkl은 저장소에 올리지 않음 (최종 모델은 Neural_Net/Competition/에만)
+Neural_Net/experiments/**/*.pkl

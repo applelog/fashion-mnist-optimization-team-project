@@ -1,0 +1,2 @@
+﻿name,total_layers,hidden_size_list,activation,weight_init_std,optimizer,lr,use_batchnorm,weight_decay_lambda,use_dropout,dropout_ratio,best_epoch,mini_batch_size,seed,train_acc,val_acc,test_acc,pkl_path,pkl_size_mb
+Final_R2_T01_26ep,3,"[512, 256]",relu,he,adagrad,0.014164,True,4.672e-05,True,0.2674,26,128,42,0.9682,0.9025,0.8962,C:\Users\ttasx\Downloads\school\2-2\2_신경망\14주차\fashion\Neural_Net\experiments\minseoHan\minseoHan_final_model.pkl,4.11
