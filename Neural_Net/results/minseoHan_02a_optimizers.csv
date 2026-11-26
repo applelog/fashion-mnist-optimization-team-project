@@ -1,0 +1,5 @@
+﻿name,total_layers,hidden_size_list,activation,weight_init_std,optimizer,lr,use_batchnorm,weight_decay_lambda,use_dropout,dropout_ratio,epochs,mini_batch_size,seed,train_acc,val_acc,best_val_acc,elapsed_sec
+Opt_SGD_lr0.01,4,"[512, 256, 128]",relu,he,sgd,0.01,False,0.0,False,0.0,20,128,42,0.8806,0.8672,0.8696,239.19
+Opt_Momentum_lr0.01,4,"[512, 256, 128]",relu,he,momentum,0.01,False,0.0,False,0.0,20,128,42,0.9377,0.8870,0.8933,279.00
+Opt_AdaGrad_lr0.01,4,"[512, 256, 128]",relu,he,adagrad,0.01,False,0.0,False,0.0,20,128,42,0.9486,0.8965,0.8971,308.19
+Opt_Adam_lr0.001,4,"[512, 256, 128]",relu,he,adam,0.001,False,0.0,False,0.0,20,128,42,0.9467,0.8942,0.8954,351.14
