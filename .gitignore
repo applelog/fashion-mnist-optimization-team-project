@@ -7,4 +7,10 @@ __pycache__/
 *.hwp
 # 압축 데이터는 기본 제외, 단 Fashion-MNIST 원본은 팀 공용으로 포함
 *.gz
-!Neural_Net/data/fashion/*.gz
+!v3/data/fashion/*.gz
+# 교수님 Competition 파일(연락처 포함)과 모델 pkl 은 올리지 않음 → 각자 게시판에서 받아 Competition 폴더에 둔다
+v3/Competition/*.pkl
+v3/Competition/Competition_Code_NeuralNet.py
+v3/Competition/fashion_mnist_test_sample_selection.py
+# QUICK 모드(코드 확인용) 결과
+v3/results/quick_*
